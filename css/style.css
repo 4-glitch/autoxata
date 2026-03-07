@@ -93,16 +93,15 @@ body {
 .ticker-wrapper {
     width: 100%;
     overflow: hidden;
-    background-color: #fdfdfd; /* Той самий яскравий помаранчевий колір */
+    background-color: #fdfdfd;
     padding: 15px 0;
-    box-shadow: 1px -5px 10px rgba(0, 0, 0, 0.1); /* Легка тінь зверху */
+    box-shadow: 1px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ticker-track {
-    display: inline-block;
-    white-space: nowrap;
-    /* 15s - це швидкість. Збільште цифру, щоб зробити повільніше */
-    animation: scroll-ticker 15s linear infinite; 
+    display: flex;             
+    width: max-content;         
+    animation: scroll-ticker 15s linear infinite;
 }
 
 .ticker-track:hover {
@@ -110,9 +109,10 @@ body {
 }
 
 .ticker-item {
+    flex: 0 0 auto;             /* запрещаем сжатие */
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1a1a1a; /* Темний текст на помаранчевому фоні */
+    color: #1a1a1a;
     text-transform: uppercase;
     padding: 0 30px;
     letter-spacing: 1px;
@@ -120,7 +120,8 @@ body {
 
 /* Анімація: зсуваємо блок на 50% його ширини вліво */
 @keyframes scroll-ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    from { transform: translateX(100); }
+    to   { transform: translateX(-30%); }
 }
 
+/*social Links*/

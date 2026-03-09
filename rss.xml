@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Оновлення AutoXata</title>
+    <link>http://localhost:3000/</link>
+    <description>Останні новини, акції та корисні поради від нашого СТО.</description>
+    
+    <item>
+      <title>Знижка 15% на весняне ТО!</title>
+      <link>http://localhost:3000/#services</link>
+      <description>Підготуйте авто до сезону. Перевірка ходової та заміна мастила за вигідною ціною.</description>
+      <pubDate>Mon, 09 Mar 2026 10:00:00 +0200</pubDate>
+    </item>
+
+  </channel>
+</rss>

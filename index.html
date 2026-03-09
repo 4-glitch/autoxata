@@ -3,123 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СТО - Головна</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AutoXata</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
 </head>
-<body>
+<body id="main">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" style="position: relative;">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="#">Auto<span style="color: #e63946">Xata</span></a>
+            <a class="navbar-brand fw-bold fs-3" href="#main">Auto<span style="color: #e63946">Xata</span></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5">
-                    <li class="nav-item"><a class="nav-link active" href="#">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Послуги</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Гарантія</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Вакансії</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
-                    <li class="nav-item"><a class="nav-link">+380123456789</a></li>
+                
+                <ul class="navbar-nav mx-auto fs-6 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active px-3" href="#main">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services">Послуги</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#process">Процес</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Команда</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contacts">Контакти</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="rss.xml">
+                            Оновлення <i class="bi bi-bell-fill"></i> 
+                        </a>
+                     </li>
                 </ul>
+                
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0">
+                    <a href="tel:+380123456789" class="text-white text-decoration-none fw-bold fs-5 nav-phone">
+                        +38 012 345 67 89
+                    </a>
+                    
+                    <a href="#contacts" class="btn btn-accent rounded-pill fw-bold px-4 nav-btn" style="color: #ffffff;">
+                        Залишити заявку
+                    </a>
+                </div>
+
             </div>
         </div>
+
         <div class="scroll-progress-container">
             <div class="scroll-progress-bar" id="myScrollbar"></div>
         </div>
-        <!--ticker-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm"> 
     </nav>
-    </nav>
-    <section class="container-fluid p-0">
-        <div class="row g-0"> <div class="col-md-6 hero-dark text-white d-flex align-items-center justify-content-center p-5" style="min-height: 60vh;">
-                <div>
-                    <h1 class="display-4 fw-bold">Ваш <span class="text-accent">надійний</span> автосервіс</h1>
-                    <p class="lead mt-3">Швидкий та якісний ремонт автомобіля з гарантією.</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 bg-secondary d-flex align-items-center justify-content-center" style="min-height: 60vh;">
-                <img src="assets/img/car-main.png" alt="car-logo">
-                <div class="socialLinks">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-telegram"></i>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="container py-5">
-        <h2 class="text-center mb-5 fw-bold">Що ви отримуєте</h2>
-        
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Ринкова ціна</h5>
-                        <p class="card-text">Ринкову ціну на запчастини.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Ремонт з плюсом</h5>
-                        <p class="card-text">Підтягнемо гайки, змастимо, підкрутимо.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Прозорість</h5>
-                        <p class="card-text">Чесну фіксовану вартість робіт.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Швидкість</h5>
-                        <p class="card-text">Готове авто за 1 робочий день.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Лояльність</h5>
-                        <p class="card-text">Відстрочку остаточної оплати постійним клієнтам.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Комфорт</h5>
-                        <p class="card-text">Автодрайвер, який доставить авто на сервіс.</p>
+    <section class="hero-seamless d-flex align-items-center">
+        <div class="container relative-z-index">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 text-white">
+                    <h1 class="display-4 fw-bold mb-4">Ваш надійний сервіс ремонту вашого авто</h1>
+                    <p class="fs-5 mb-5 text-light" style="opacity: 0.8;">
+                        <span style="color: #ffffff;">Auto</span><span style="color: #fc0015;">Xata</span> 
+                        у вашому місті. Точна діагностика.
+                        <br>Сертифіковані запчастини та їх оригінальність.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-4 align-items-center mt-4">
+                        <a href="#contacts" class="hero-btn fw-bold text-decoration-none">Дізнатися вартість</a>
+                        <a href="#services" class="hero-link text-decoration-none fw-bold d-flex align-items-center">
+                            Наші послуги <i class="bi bi-chevron-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hotspot" style="top: 25%; right: 35%;">
+            <div class="hotspot-btn">+</div>
+            <div class="hotspot-tooltip">Додаткове обладнання</div>
+        </div>
+
+        <div class="hotspot" style="top: 31%; right: 15%;">
+            <div class="hotspot-btn">+</div>
+            <div class="hotspot-tooltip">Кузовний ремонт</div>
+        </div>
+
+        <div class="hotspot" style="top: 75%; right: 26%;">
+            <div class="hotspot-btn">+</div>
+            <div class="hotspot-tooltip">Шиномонтаж та диски</div>
+        </div>
     </section>
 
-    <div class="clickUp">
-        <a href="#top">
-            <img src="assets/img/up-arrow_5344906.png" alt="up-arrow">
-        </a> 
-    </div>
-
-    <div class="ticker-wrapper">
+    <div class="ticker-wrapper mt-0">
         <div class="ticker-track">
             <span class="ticker-item">Ремонт ходової</span>
             <span class="ticker-item">Заміна мастила</span>
@@ -134,10 +103,565 @@
             <span class="ticker-item">Автоелектрик</span>
         </div>    
     </div>
+        <!--how we're working?-->
+    <section class="container py-5" id="process">
+        <h2 class="text-center mb-5 fw-bold">Як ми <span class="text-accent">працюємо</span></h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="process-card h-100 p-4 position-relative overflow-hidden bg-white shadow-sm">
+                    <div class="step-number">01</div>
+                    <div class="icon-box mb-3 text-accent fs-1">
+                        <i class="bi bi-telephone-inbound"></i>
+                    </div>
+                    <h5 class="fw-bold">Заявка</h5>
+                    <p class="text-muted mb-0 fs-6">Ви залишаєте заявку на сайті або телефонуєте нам для узгодження зручного часу.</p>
+                </div>
+            </div>
 
+            <div class="col-md-6 col-lg-3">
+                <div class="process-card h-100 p-4 position-relative overflow-hidden bg-white shadow-sm">
+                    <div class="step-number">02</div>
+                    <div class="icon-box mb-3 text-accent fs-1">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h5 class="fw-bold">Діагностика</h5>
+                    <p class="text-muted mb-0 fs-6">Майстер проводить огляд авто, виявляє точні причини несправності та погоджує вартість.</p>
+                </div>
+            </div>
 
+            <div class="col-md-6 col-lg-3">
+                <div class="process-card h-100 p-4 position-relative overflow-hidden bg-white shadow-sm">
+                    <div class="step-number">03</div>
+                    <div class="icon-box mb-3 text-accent fs-1">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <h5 class="fw-bold">Ремонт</h5>
+                    <p class="text-muted mb-0 fs-6">Виконуємо ремонтні роботи чітко за регламентом, використовуючи надійні деталі.</p>
+                </div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="col-md-6 col-lg-3">
+                <div class="process-card h-100 p-4 position-relative overflow-hidden bg-white shadow-sm">
+                    <div class="step-number">04</div>
+                    <div class="icon-box mb-3 text-accent fs-1">
+                        <i class="bi bi-check2-circle"></i>
+                    </div>
+                    <h5 class="fw-bold">Готове авто</h5>
+                    <p class="text-muted mb-0 fs-6">Ви перевіряєте роботу, оплачуєте послуги, отримуєте гарантію та забираєте справне авто.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--What's can you have?-->
+    <section class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">Що ви <span class="text-accent">отримуєте</span></h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">01</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-tags"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Ринкова ціна</h5>
+                        <p class="card-text text-muted">Ринкову ціну на запчастини.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">02</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-wrench-adjustable"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Ремонт з плюсом</h5>
+                        <p class="card-text text-muted">Підтягнемо гайки, змастимо, підкрутимо.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">03</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-clipboard-check"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Прозорість</h5>
+                        <p class="card-text text-muted">Чесну фіксовану вартість робіт.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">04</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-stopwatch"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Швидкість</h5>
+                        <p class="card-text text-muted">Готове авто за 1 робочий день.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">05</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-credit-card-2-front"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Лояльність</h5>
+                        <p class="card-text text-muted">Відстрочку остаточної оплати постійним клієнтам.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card card h-100 border-0 shadow-sm p-3 text-center text-md-start position-relative overflow-hidden">
+                    <div class="step-number">06</div>
+                    <div class="card-body" style="position: relative; z-index: 1;">
+                        <div class="mb-3 text-accent fs-1">
+                            <i class="bi bi-car-front"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Комфорт</h5>
+                        <p class="card-text text-muted">Автодрайвер, який доставить авто на сервіс.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Popular services-->
+    <section class="container py-5" id="services">
+        <h2 class="text-center mb-4 fw-bold">Популярні <span class="text-accent">послуги</span></h2>
+        
+        <div class="d-flex justify-content-center flex-wrap mb-5 gap-2" id="service-filters">
+            <button class="btn btn-outline-dark active" data-filter="all">Всі послуги</button>
+            <button class="btn btn-outline-dark" data-filter="chassis">Ходова частина</button>
+            <button class="btn btn-outline-dark" data-filter="engine">Двигун</button>
+            <button class="btn btn-outline-dark" data-filter="electro">Електрика</button>
+        </div>
+
+        <div class="row g-4" id="services-grid">
+            
+            <div class="col-md-6 col-lg-4 service-item" data-category="chassis">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Діагностика ходової</h5>
+                        <p class="card-text text-muted">Повна перевірка підвіски, амортизаторів та сайлентблоків на вібростенді.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-5 fw-bold text-accent">від 500 грн</span>
+                            <a href="#contacts" class="btn btn-sm btn-dark">Записатись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 service-item" data-category="engine">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Заміна ГРМ</h5>
+                        <p class="card-text text-muted">Професійна заміна ременя або ланцюга газорозподільного механізму.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-5 fw-bold text-accent">від 2500 грн</span>
+                            <a href="#contacts" class="btn btn-sm btn-dark">Записатись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 service-item" data-category="electro">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Комп'ютерна діагностика</h5>
+                        <p class="card-text text-muted">Зчитування помилок та перевірка всіх електронних систем авто.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-5 fw-bold text-accent">від 400 грн</span>
+                            <a href="#contacts" class="btn btn-sm btn-dark">Записатись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 service-item" data-category="chassis">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Заміна гальмівних колодок</h5>
+                        <p class="card-text text-muted">Швидка заміна передніх та задніх колодок з профілактикою супортів.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fs-5 fw-bold text-accent">від 600 грн</span>
+                            <a href="#contacts" class="btn btn-sm btn-dark">Записатись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--contact info-->
+    <section class="container py-5" id="contacts">
+        <div class="row g-5 align-items-center">          
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Потрібен ремонт? <span class="text-accent">Запишіться зараз</span></h2>
+                <p class="text-muted mb-4 fs-5">Залиште заявку на діагностику або ремонт. Наш менеджер передзвонить вам протягом 10 хвилин для уточнення деталей.</p>
+                
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+                        <strong>Адреса:</strong> м. Дніпро, вул. Автомобільна, 10</li>
+                    <li class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg> 
+                        <strong>Телефон:</strong> +38 (099) 123-45-67</li>
+                    <li class="mb-3"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/></svg>
+                        <strong>Графік:</strong> Пн-Нд: 09:00 - 19:00</li>
+                </ul>
+            </div>    
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg p-4 hero-dark text-white" style="border-radius: 15px;">
+                    <h4 class="mb-4 text-center fw-bold">Онлайн запис</h4>
+                    
+                <form id="booking-form">
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Ваше ім'я</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Наприклад, Олексій" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="userPhone" class="form-label">Номер телефону</label>
+                        <input type="tel" class="form-control" id="userPhone" placeholder="+38 (000) 000-00-00" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="userService" class="form-label">Що потрібно зробити?</label>
+                        <select class="form-select" id="userService">
+                            <option value="Діагностика">Комп'ютерна діагностика</option>
+                            <option value="Ходова">Ремонт ходової</option>
+                            <option value="ТО">Планове ТО (мастило, фільтри)</option>
+                            <option value="Інше">Інша проблема / Не знаю</option>
+                        </select>
+                    </div>                      
+                    <button type="submit" class="btn btn-accent w-100 fw-bold py-2 fs-5">Записатися на СТО</button>
+                
+                    <div id="success-alert" class="alert alert-success mt-3 text-center d-none" role="alert">
+                        </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <!--send +tel to manager-->
+        <script>
+            let bookingForm = document.getElementById('booking-form');let successAlert = document.getElementById('success-alert');
+            bookingForm.onsubmit = function(event) {event.preventDefault();
+                let name = document.getElementById('userName').value;
+                successAlert.innerHTML = "<strong>Дякуємо, " + name + "!</strong><br>Ваша заявка прийнята. Наш менеджер скоро зателефонує.";
+                successAlert.classList.remove('d-none');bookingForm.reset();setTimeout(function() {
+                    successAlert.classList.add('d-none');
+                }, 60000);
+            };
+        </script>
+    </section>
+
+    <!--Guide-->
+    <section class="container py-5" id="guide">
+    <div class="accordion shadow-sm" id="faqAccordion" style="border-radius: 12px; overflow: hidden;">
+        <div id="faq-page-1">
+            <h2 class="text-center mb-5 fw-bold">Популярні <span class="text-accent">питання</span> (FAQ)</h2>      
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="faqAccordion" style="border-radius: 12px; overflow: hidden;">
+                        
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Чи можу я привезти свої запчастини?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Так, ви можете надати власні запчастини для ремонту. Проте, зверніть увагу, що в такому випадку ми надаємо гарантію лише на виконані роботи, а не на саму деталь. Якщо запчастина виявиться бракованою, повторна її заміна оплачується окремо.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Як діє гарантія та на що вона поширюється?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Ми надаємо офіційну гарантію як на придбані у нас запчастини, так і на виконані роботи (термін залежить від типу деталей). У разі виникнення гарантійного випадку усунення несправностей виконується за наш рахунок і поза чергою.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Чому деталі і вузли краще замовляти у вас?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Замовляючи запчастини через наше СТО, ви отримуєте 100% захист від підробок, точний підбір за VIN-кодом авто та комплексну гарантію "деталь + робота". Також ви економите свій час на пошук і доставку.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Чи можна по телефону отримати точну інформацію про причини поломки?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    По телефону ми можемо назвати лише орієнтовні причини та приблизну вартість на основі ваших описів. Точний діагноз та остаточний кошторис встановлюються тільки після візуального огляду авто майстром або комп'ютерної діагностики.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Чому при натисканні на гальмо з'являється писк?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Найчастіша причина — критичний знос гальмівних колодок (спрацьовує металевий індикатор зносу — "пискун"). Також причиною може бути потрапляння бруду, неякісний матеріал колодок або знос гальмівних дисків. Рекомендуємо негайно записатися на діагностику.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    На що впливає розвал-сходження?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Правильно налаштовані кути коліс (розвал-сходження) забезпечують курсову стійкість автомобіля (авто не "тягне" вбік), легкість керування, економію пального та, що найголовніше, запобігають швидкому і нерівномірному зносу шин.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Чому автомобіль не заводиться при мінусовій температурі?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Основні причини: розряджений або старий акумулятор (на морозі він втрачає ємність), загустіння моторного мастила (якщо воно не відповідає сезону), проблеми зі свічками запалювання (або свічками розжарювання в дизелях), а також замерзання неякісного пального.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faq-page-2" class="d-none">
+            <h2 class="text-center mb-5 fw-bold">Популярні <span class="text-accent">питання</span> (FAQ)</h2>      
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="faqAccordion" style="border-radius: 12px; overflow: hidden;">
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                                    Чому так дорого? / З чого складається ціна?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Вартість формується з якості оригінальних (або сертифікованих) запчастин, використання професійного дороговартісного обладнання та оплати праці кваліфікованих майстрів. Ми робимо надійно з першого разу, що в перспективі економить ваші гроші.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                    Чи можна пройти тільки діагностику і самому усувати несправності?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Так, звісно. Ви можете замовити лише комплексну діагностику. По її завершенню ви отримаєте офіційний роздрукований лист з усіма знайденими проблемами і рекомендаціями, а ремонтувати авто можете там, де вам зручно.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                                    Чому качає машину на швидкості?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Найчастіше це ознака зношених амортизаторів, розбалансування коліс, проблем із геометрією кузова або зносу сайлентблоків важелів підвіски. Експлуатувати таке авто небезпечно, потрібен терміновий огляд ходової.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                                    Чому пічка (грубка) не гріє?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Це може бути забитий радіатор пічки, несправний термостат (ганяє антифриз по великому колу), низький рівень охолоджуючої рідини або поломка заслінок клімат-контролю.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+        <div class="d-flex justify-content-center mt-4 gap-3">
+            <button id="btn-prev-faq" class="btn btn-outline-dark fw-bold px-4 d-none">
+                <i class="bi bi-arrow-left me-2"></i> Попередні
+            </button>
+            <button id="btn-next-faq" class="btn btn-outline-dark fw-bold px-4">
+                Більше питань <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+        </div>
+
+    <div class="clickUp">
+        <a href="#main">
+            <img src="assets/img/up-arrow_5344906.png" alt="up-arrow">
+        </a> 
+    </div>
+
+    <div id="idMap" class="container-fluid p-0 mt-5 map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.334053702179!2d35.048564!3d48.464717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2df13038a8b%3A0x6b2b73ec2311ba0d!2z0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua" 
+            width="100%" 
+            height="400" 
+            style="border:0; filter: grayscale(100%) invert(90%) contrast(80%);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <footer class="bg-dark text-white pt-0 pb-4">
+        
+        <div class="brands-ticker-wrapper mb-5">
+            <div class="brands-track">
+                <span class="brand-item">BMW</span>
+                <span class="brand-item">Mercedes-Benz</span>
+                <span class="brand-item">Audi</span>
+                <span class="brand-item">Volkswagen</span>
+                <span class="brand-item">Toyota</span>
+                <span class="brand-item">Ford</span>
+                <span class="brand-item">Bosch</span>
+                <span class="brand-item">Motul</span>
+                
+                <span class="brand-item">BMW</span>
+                <span class="brand-item">Mercedes-Benz</span>
+                <span class="brand-item">Audi</span>
+                <span class="brand-item">Volkswagen</span>
+                <span class="brand-item">Toyota</span>
+                <span class="brand-item">Ford</span>
+                <span class="brand-item">Bosch</span>
+                <span class="brand-item">Motul</span>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <div class="row g-4 justify-content-between">
+                
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fw-bold fs-3 text-white text-decoration-none mb-3 d-inline-block" href="#">Auto<span style="color: #e63946">Xata</span></a>
+                    <p class="text-secondary mt-2 fs-6">
+                        Ваш надійний партнер у світі авто. Якість, перевірена часом та кілометрами. Обслуговуємо автомобілі всіх марок.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-secondary text-hover-accent fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary text-hover-accent fs-4"><i class="bi bi-telegram"></i></a>
+                        <!--<a href="#" class="text-secondary text-hover-accent fs-4"><i class="bi bi-facebook"></i></a>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white" style="letter-spacing: 1px;">Послуги</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="text-secondary text-decoration-none text-hover-accent">Ходова частина</a></li>
+                        <li class="mb-2"><a href="#services" class="text-secondary text-decoration-none text-hover-accent">Двигун</a></li>
+                        <li class="mb-2"><a href="#services" class="text-secondary text-decoration-none text-hover-accent">Електрика</a></li>
+                        <li class="mb-2"><a href="#services" class="text-secondary text-decoration-none text-hover-accent">Шиномонтаж</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white" style="letter-spacing: 1px;">Клієнтам</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none text-hover-accent">Про компанію</a></li>
+                        <li class="mb-2"><a href="#process" class="text-secondary text-decoration-none text-hover-accent">Як ми працюємо</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none text-hover-accent">Гарантія</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none text-hover-accent">Команда</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-5">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white" style="letter-spacing: 1px;">Instagram</h6>
+                    <div class="insta-grid">
+                        <a href="#" class="insta-item"><img src="assets/img/insta1.jpg" alt="Шиномонтаж"></a>
+                        <a href="#" class="insta-item"><img src="assets/img/insta1.jpg" alt="Шиномонтаж"></a>
+                        <a href="#" class="insta-item"><img src="assets/img/insta1.jpg" alt="Шиномонтаж"></a>
+                        <a href="#" class="insta-item"><img src="assets/img/insta1.jpg" alt="Шиномонтаж"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-7">
+                    <h6 class="fw-bold mb-4 text-uppercase text-white" style="letter-spacing: 1px;">Контакти</h6>
+                    
+                    <ul class="list-unstyled text-secondary mb-4">
+                        <li class="mb-3 d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt fs-5 text-accent"></i>
+                            <span>м. Дніпро, вул. Автомобільна, 10</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone fs-5 text-accent"></i>
+                            <span>+38 050 158 02 03</span>
+                        </li>
+                    </ul>
+
+                    <h6 class="fw-bold mb-3 text-white">Корисні поради для авто</h6>
+                    <a href="#guide" class="btn btn-accent w-100 d-flex justify-content-between align-items-center py-2 fw-bold text-decoration-none" style="border-radius: 8px;">
+                        <span>Читати FAQ</span>
+                        <i class="bi bi-question-circle fs-5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+        
+    <div class="bg-black text-center py-3">
+        <small class="text-secondary">© 2026 AutoXata. Всі права захищені.</small>
+    </div>
+
     <script src="script/ticker.js"></script>
+    <script src="script/filtrationCards.js"></script>
+    <script src="script/clickUp.js"></script>
+    <script src="script/faqPagination.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
